@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #495897b7;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Kalnia', serif;
+    color: #f1feff;
+    margin-top: 1.4rem;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.container {
+    /* background-color: hsla(91, 35%, 44%, 0.203); */
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.2rem;
+}
+
+.game-board {
+    /* background-color: hsla(0, 0%, 100%, 0.192); */
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+}
+
+.box {
+    /* 20% of the game board  */
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem hsla(0, 0%, 0%, 0.279);
+    font-size: 10vmin;
+    color: rgba(223, 98, 21, 0.95);
+    cursor: pointer;
+    background-color: hsl(186, 40%, 90%);
+}
+
+.box:hover {
+    background-color: hsla(186, 41%, 90%, 0.842);
+}
+
+.reset {
+    font-family: 'Kalnia', serif;
+    font-size: 4vmin;
+    font-weight: bold;
+    border-radius: 16px;
+    width: 6.4rem;
+    height: 3rem;
+    border: none;
+    background-color: hsl(288, 47%, 25%);
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 0 0 1rem hsla(0, 0%, 0%, 0.279);
+}
+
+.reset:hover {
+    background-color: hsla(288, 41%, 31%, 0.737);
+}
+
+/* Style for the dialog container */
+dialog {
+    text-align: center;
+    height: 15rem;
+    width: 21rem;
+    background-color: hsl(228, 82%, 89%);
+    color: #2E2E2E;
+    border: 2px solid #2E2E2E;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgb(156, 221, 239);
+    border: none;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover state for the dialog */
+dialog:hover {
+    opacity: 0.9;
+    box-shadow: 0 0 20px rgb(156, 221, 239);
+}
+
+/* Style for the dialog content */
+dialog p {
+    font-family: 'Kalnia', serif;
+    margin: 10px 0;
+    font-size: 2em;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+/* Style for the "Close" button inside the dialog */
+dialog button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: hsl(289, 30%, 18%);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    margin-top: 26px;
+}
+dialog button:hover {
+    background-color: hsl(288, 47%, 25%);
+}
+
+/* Style for the overlay behind the dialog */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+a{
+    text-decoration: none;
+    color: #153243;
+    display: block;
+    margin-top: 0.8rem;
+    font-weight: bold;
+    font-family: 'Kalnia', serif;
+}
+
+/* Media Query for Tablets and Smaller Screens (up to 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem; 
+        margin-top: 0.5rem;
+    }
+
+    .container {
+        height: 65vh;   
+
+    }
+
+    .game-board {
+        height: 60vmin; 
+        width: 60vmin;
+    }
+
+    .box {
+        height: 18vmin; 
+        width: 18vmin;
+        font-size: 7vmin; 
+    }
+
+    .reset {
+        font-size: 5vmin;
+        width: 6rem;
+        height: 4rem;
+        margin-top: 0.5rem; 
+    }
+
+    a {
+        margin-bottom: 2rem; /
+    }
+}

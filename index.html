@@ -3,12 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=DM+Serif+Display:ital@1&family=Kalnia&family=Orbitron:wght@500&family=Playfair+Display:wght@700&family=VT323&display=swap" rel="stylesheet">
+
     <title>Tic-Tac-Toe</title>
     <!-- ADD FAVICON -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js" defer>
+    <script src = "app.js" defer></script>
 </head>
 <body>
+    <main>
+        
+        <h1>Tic Tac Toe Game</h1>
+        <div class="container">
+            <div class="game-board">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button class="reset">Reset</button>
+
+        <a href="https://github.com/pantharshit007/Tic-Tac-Toe">@pantharshit007</a>
+
+        <!-- Dialog element for displaying the winner -->
+        <dialog id="winnerDialog">
+            <p id="winnerMessage"></p>
+            <button id="closeDialog">Close</button>
+        </dialog>
+
+
+    </main>
     
 </body>
 </html>
