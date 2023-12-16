@@ -19,7 +19,7 @@ Consider the following enhancements for future upgrades:
 - **Multiplayer Mode:** Implement a multiplayer mode, allowing two players to play against each other.
 - **Difficulty Levels:** Add difficulty levels for single-player mode, with varying AI capabilities.
 - **Scoreboard:** Implement a scoreboard to keep track of the number of wins for each player.
-- **Glich:** Sometimes without filling all the block system declare a Draw. 
+- **Glich:** Sometimes without filling all the block system declare a Draw. [DONE ✅]
 
 ## Deployed Version
 The game is deployed and accessible [here](https://tic-tac-toe007.onrender.com).

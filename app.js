@@ -45,7 +45,7 @@ function mark(idx)
 
     let winner = checkWinner();
 
-    if (count === 9 && !winner) { 
+    if (count >= 9 && !winner) { 
         draw();
     }
 }
@@ -111,5 +111,6 @@ function reset(){
         box.textContent = "";
         box.disabled = false;
         yourTurn = true;
+        count=0;
     })
 }
