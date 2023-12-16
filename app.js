@@ -27,22 +27,29 @@ boxes.forEach((box,index)=> {
     box.addEventListener('click', ()=> mark(index));
 });
 
-function mark(idx) {
-    if (yourTurn) {
+function mark(idx) 
+{
+    if (yourTurn && boxes[idx].textContent === "") {
         boxes[idx].textContent = "X";
         boxes[idx].style.color = 'tomato';
         yourTurn = !yourTurn;
-    } else {
+        boxes[idx].disabled = true;
+        count++;    
+    } else if (!yourTurn && boxes[idx].textContent === "") {
         boxes[idx].textContent = "O";
         boxes[idx].style.color = 'green';
         yourTurn = !yourTurn;
+        boxes[idx].disabled = true;
+        count++;
     }
-    boxes[idx].disabled = true;
-    count++;
+
     let winner = checkWinner();
 
-    if (count===9 && !winner) draw();
+    if (count === 9 && !winner) { 
+        draw();
+    }
 }
+
 
 ///// A different Method \\\\\
 // function mark(idx) {
@@ -85,11 +92,12 @@ function showWinner(win){
 }
 
 function draw(){
-    const winnerMessage = `We have No winner This Time 🤝.    Try Again! `
+    const winnerMessage = `We have No winner This Time 🤝. Try Again! `
+    // location.reload();
+    // console.log(winnerMessage);
 
     winnerMessageElement.textContent = winnerMessage;
     dialog.showModal();
-    // console.log(winnerMessage);  
 }
 
 // Closing the dialog when the "Close" button is clicked
