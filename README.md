@@ -3,7 +3,7 @@
 Welcome to the Tic Tac Toe game! This simple web-based game allows players to take turns marking spaces on a 3x3 grid, aiming to achieve a winning pattern.
 
 ## Demo
-[Play the game](#https://tic-tac-toe007.onrender.com) 
+[Play the game](https://tic-tac-toe007.onrender.com) 
 
 ![Tic Tac Toe Screenshot](img/Visual.png) 
 ![Winner UI](img/winner.png)
@@ -22,10 +22,13 @@ Consider the following enhancements for future upgrades:
 - **Glich:** Sometimes without filling all the block system declare a Draw. 
 
 ## Deployed Version
-The game is deployed and accessible [here](#https://tic-tac-toe007.onrender.com).
+The game is deployed and accessible [here](https://tic-tac-toe007.onrender.com).
 
 ## Setup Locally
-1. Clone the repository `git clone https://github.com/pantharshit007/Tic-Tac-Toe.git`.
+1. Clone the repository 
+```bash
+git clone https://github.com/pantharshit007/Tic-Tac-Toe.git
+```
 2. Open `index.html` in your web browser.
 
 ## Technologies Used
